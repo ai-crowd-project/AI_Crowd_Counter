@@ -1,0 +1,2 @@
+# AI_Crowd_Counter
+AIを活用した教室の混雑度測定システム
