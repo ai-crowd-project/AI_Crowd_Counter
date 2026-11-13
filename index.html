@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI教室混雑度モニター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>AI教室混雑度モニター</h1>
+        <p>カメラを使って教室の混雑状況を確認</p>
+    </header>
+
+    <main>
+        <section class="status-area">
+            <div class="status-card">
+                <h2>現在の人数</h2>
+                <p><span id="peopleCount">0</span> 人</p>
+            </div>
+
+            <div class="status-card">
+                <h2>混雑率</h2>
+                <p><span id="occupancyRate">0</span> %</p>
+            </div>
+        </section>
+
+        <section class="camera-area">
+            <h2>カメラ映像</h2>
+
+            <video id="camera" autoplay playsinline muted></video>
+
+            <div class="buttons">
+                <button id="startCamera">カメラ開始</button>
+                <button id="stopCamera">カメラ停止</button>
+            </div>
+
+            <p id="cameraStatus">カメラは停止中です</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
